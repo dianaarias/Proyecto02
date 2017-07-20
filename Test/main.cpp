@@ -3,6 +3,9 @@
 
 int main(int argc, char *argv[])
 {
-	OEJTS_test test;
-	return test.run();
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+
+    return a.exec();
 }

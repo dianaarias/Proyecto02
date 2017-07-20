@@ -3,9 +3,9 @@
 
 OEJTS_test::OEJTS_test()
 {
-	for(int index = 0; index < 32; ++index){
-		preguntas[index] = new Question();
-	}
+//	for(int index = 0; index < 32; ++index){
+//		preguntas[index] = new Question();
+//	}
 	preguntas[0].set_forward_text("makes lists");
 	preguntas[0].set_backward_text("relies on memory");
 	preguntas[1].set_forward_text("sceptical");
@@ -77,11 +77,3 @@ OEJTS_test::~OEJTS_test()
 	delete[] preguntas;
 }
 
-int OEJTS_test::run()
-{
-	QApplication a(argc, argv);
-	MainWindow w;
-	w.show();
-
-	return a.exec();
-}

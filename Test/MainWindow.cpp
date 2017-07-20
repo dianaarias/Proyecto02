@@ -83,7 +83,9 @@ void MainWindow::on_pushButton_clicked()
     result -= group8->checkedId() > 0 ? group8->checkedId() : 0;
     result += group7->checkedId() > 0 ? group7->checkedId() : 0;
 
-    if(result > 24){
+    if((group->checkedId() == -1 || group2->checkedId() == -1) || (group3->checkedId() == -1 || group4->checkedId() == -1) || (group5->checkedId() == -1 || group6->checkedId() == -1) || (group7->checkedId() == -1 || group8->checkedId() == -1)){
+        QMessageBox::information(this, tr("Results"), tr("Please complete the test"));
+    } else if(result > 24){
         QMessageBox::information(this, tr("Results"), tr("Congratulations! You're a Perceptive person"));
     } else{
         QMessageBox::information(this, tr("Results"), tr("Congratulations! You're a Judging individual"));

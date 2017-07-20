@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Open Extended Jungian Type Scales 1.2.</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -587,22 +587,6 @@
    <zorder>groupBox_8</zorder>
    <zorder>groupBox_3</zorder>
    <zorder>groupBox_5</zorder>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>904</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuOpen_Extended_Jungian_Type_Scales_1_2">
-    <property name="title">
-     <string>Open Extended Jungian Type Scales 1.2.</string>
-    </property>
-   </widget>
-   <addaction name="menuOpen_Extended_Jungian_Type_Scales_1_2"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>

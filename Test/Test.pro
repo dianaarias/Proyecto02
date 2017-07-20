@@ -24,12 +24,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        MainWindow.cpp \
-    Question.cpp \
-    OEJTS_test.cpp
+        MainWindow.cpp
 
-HEADERS  += MainWindow.h \
-    Question.h \
-    OEJTS_test.h
+HEADERS  += MainWindow.h
 
 FORMS    += MainWindow.ui

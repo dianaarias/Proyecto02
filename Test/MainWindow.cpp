@@ -84,9 +84,9 @@ void MainWindow::on_pushButton_clicked()
     result += group7->checkedId() > 0 ? group7->checkedId() : 0;
 
     if(result > 24){
-        QMessageBox::information(this, tr("Results"), tr("Usted es una persona perceptiva"));
+        QMessageBox::information(this, tr("Results"), tr("Congratulations! You're a Perceptive person"));
     } else{
-        QMessageBox::information(this, tr("Results"), tr("Usted es una persona Juiciosa"));
+        QMessageBox::information(this, tr("Results"), tr("Congratulations! You're a Judging individual"));
     }
 
 }

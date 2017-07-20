@@ -73,22 +73,23 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    int result = 18;
-    result += group->checkedId() > 0 ? group->checkedId() : 0;
-    result += group2->checkedId() > 0 ? group2->checkedId() : 0;
-    result -= group3->checkedId() > 0 ? group3->checkedId() : 0;
-    result += group4->checkedId() > 0 ? group4->checkedId() : 0;
-    result -= group5->checkedId() > 0 ? group5->checkedId() : 0;
-    result += group6->checkedId() > 0 ? group6->checkedId() : 0;
-    result -= group8->checkedId() > 0 ? group8->checkedId() : 0;
-    result += group7->checkedId() > 0 ? group7->checkedId() : 0;
-
     if((group->checkedId() == -1 || group2->checkedId() == -1) || (group3->checkedId() == -1 || group4->checkedId() == -1) || (group5->checkedId() == -1 || group6->checkedId() == -1) || (group7->checkedId() == -1 || group8->checkedId() == -1)){
         QMessageBox::information(this, tr("Results"), tr("Please complete the test"));
-    } else if(result > 24){
-        QMessageBox::information(this, tr("Results"), tr("Congratulations! You're a Perceptive person"));
     } else{
-        QMessageBox::information(this, tr("Results"), tr("Congratulations! You're a Judging individual"));
-    }
+        int result = 18;
+        result += group->checkedId();
+        result += group2->checkedId();
+        result -= group3->checkedId();
+        result += group4->checkedId();
+        result -= group5->checkedId();
+        result += group6->checkedId();
+        result -= group8->checkedId();
+        result += group7->checkedId();
 
+        if(result > 24){
+            QMessageBox::information(this, tr("Results"), tr("Congratulations! You're a Perceptive person"));
+        } else{
+            QMessageBox::information(this, tr("Results"), tr("Congratulations! You're a Judging individual"));
+        }
+    }
 }
